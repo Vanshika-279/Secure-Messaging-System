@@ -29,12 +29,13 @@ There are four Python programs:
                                       the same shared key, decrypts
                                       Alice's message, and sends an
                                       encrypted reply
+                                      
+`attacker.py`                         Replaces the normal relay server for a local
+                                      tampering demonstration. Modifies one byte
+                                      of Alice's encrypted message before forwarding
+                                      it to Bob.
 
-  `attacker.py`                       Replaces the normal relay server
-                                      for a local tampering
-                                      demonstration; modifies one byte of
-                                      Alice's encrypted message before
-                                      forwarding it to Bob
+  
   -----------------------------------------------------------------------
 
 ## Cryptographic Concepts Used
